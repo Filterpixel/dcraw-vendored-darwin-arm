@@ -1,0 +1,17 @@
+{
+  "name": "dcraw-vendored-darwin-arm",
+  "version": "1.0.0",
+  "description": "dcraw binary for mac-os arm",
+  "main": "build.js",
+  "scripts": {
+    "package": "node build.js",
+    "compile:darwin": "cd macos && ./build.sh"
+  },
+  "keywords": [],
+  "author": "Varun Vaibhav",
+  "license": "ISC",
+  "dependencies": {
+    "fs-extra": "^11.1.0",
+    "rootrequire": "^1.0.0"
+  }
+}

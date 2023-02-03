@@ -26,14 +26,17 @@ const file = (name) => path.resolve(dist, name);
       main: "index.js",
       private: undefined,
       os: [process.platform],
-      cpu: ["x64"],
+      cpu: [process.arch],
     }),
     { spaces: 2 }
   );
+  //   console.log("package.json created")
+  //   console.log(dist, bin, binname)
 
   await fs.copy(bin, file(binname));
   await fs.copy("./README.md", file("README.md"));
   await fs.copy("./src/dcraw.c", file("dcraw.c"));
+  // console.log("Coying of file done");
 
   await fs.outputFile(
     file("index.js"),

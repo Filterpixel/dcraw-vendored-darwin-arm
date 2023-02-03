@@ -1,4 +1,10 @@
-Build `dcraw.c` by `gcc -o dcraw dcraw.c -lm -DNODEPS`
+Compile `dcraw.c` for mac by running
+
+```
+npm run compile:darwin
+```
+
+This projects distributes the `dcraw` binary through a series of npm modules, in order to allow using the binaries through `child_process`.
 
 Reference -
 

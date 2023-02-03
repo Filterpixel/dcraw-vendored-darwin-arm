@@ -1,5 +1,5 @@
 {
-  "name": "dcraw-vendored-darwin-arm",
+  "name": "@filterpixel/dcraw-vendored-darwin-arm",
   "version": "1.0.0",
   "description": "dcraw binary for mac-os arm",
   "main": "index.js",
